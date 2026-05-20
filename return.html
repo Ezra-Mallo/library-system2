@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+        <h2>🔄 Return Book</h2>
+        
+        <label>Member ID</label>
+        <input type="text" id="returnMemberId" placeholder="Enter Member ID">
+        <button id="loadUserBorrows">Load Borrowed Books</button>
+
+        <div id="borrowedList"></div>
+
+        <form id="returnForm" style="display:none;">
+            <label>Book ISBN to Return</label>
+            <input type="text" id="returnIsbn" readonly>
+            <button type="submit">Confirm Return</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

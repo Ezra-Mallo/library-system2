@@ -1,0 +1,30 @@
+Selector 4: [attr$="value"] – Ends with ($)
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a[href$=".pdf"] { color: red; font-weight: bold; background: #ffe6e6; padding: 2px 5px; border-radius: 3px; }
+        a[href$=".jpg"] { border: 2px solid #ddd; padding: 2px 5px; border-radius: 5px; display: inline-block; }
+        img[src$=".svg"] { width: 50px; vertical-align: middle; }
+        img[src$=".jpg"] { width: 50px; vertical-align: middle; }
+    </style>
+</head>
+<body>
+    <a href="report.pdf">report.pdf (red, bold, pink bg)</a><br>
+    <a href="photo.jpg">photo.jpg (border around link)</a><br>
+    <a href="photo">photo.jpg (border around link)</a><br>
+    <img src="../images/pipo_avocado.svg" alt="logo"> SVG (50px width)
+    <img src="../images/img1.jpg" alt="logo"> SVG (50px width)
+    <p>✅ [href$=".pdf"] = red bold | [href$=".jpg"] = border | [src$=".svg"] = 50px width</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

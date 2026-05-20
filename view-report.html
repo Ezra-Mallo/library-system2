@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Reports</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+        <h2>📊 Library Reports</h2>
+        
+        <div class="report-tabs">
+            <button class="tab-btn active" data-tab="popular">Most Popular Books</button>
+            <button class="tab-btn" data-tab="active">Active Members</button>
+            <button class="tab-btn" data-tab="overdue">Overdue Items</button>
+            <button class="tab-btn" data-tab="inventory">Inventory Status</button>
+        </div>
+
+        <div id="reportContent" class="report-content"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

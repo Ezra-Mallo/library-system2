@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Book</title>
+    <link rel="stylesheet" href="css/remove-book.css">
+</head>
+<body>
+    <div class="form-container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+        <h2>❌ Remove Book</h2>
+        
+        <div class="search-area">
+            <label>Search Book:</label>
+            <input type="text" id="searchBookInput" placeholder="Enter ISBN or Title">
+            <button id="searchBookBtn">Search</button>
+        </div>
+
+        <div id="bookResult" class="book-result"></div>
+
+        <form id="removeBookForm" style="display:none;">
+            <h3>Confirm Removal</h3>
+            <p id="removeDetails"></p>
+            <button type="submit" class="danger-btn">Permanently Remove Book</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

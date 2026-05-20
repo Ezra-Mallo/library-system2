@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+        <h2>👥 Manage Members</h2>
+        
+        <div class="search-area">
+            <input type="text" id="memberSearch" placeholder="Search by name or ID">
+            <button id="searchMemberBtn">Search</button>
+        </div>
+
+        <div id="membersList"></div>
+
+        <div id="editMemberArea" style="display:none;">
+            <h3>Edit Member</h3>
+            <form id="editMemberForm">
+                <input type="hidden" id="editMemberId">
+                <label>Full Name</label>
+                <input type="text" id="editName">
+                <label>Email</label>
+                <input type="email" id="editEmail">
+                <label>Phone</label>
+                <input type="text" id="editPhone">
+                <label>Membership Type</label>
+                <select id="editMembershipType"></select>
+                <button type="submit">Update Member</button>
+                <button type="button" id="deleteMemberBtn" class="danger-btn">Delete Member</button>
+            </form>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Book</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+        <h2>✏️ Update Book Information</h2>
+        
+        <label>Find Book by ISBN:</label>
+        <div style="display:flex; gap:10px;">
+            <input type="text" id="updateSearchIsbn" placeholder="Enter ISBN">
+            <button id="loadBookBtn">Load Book</button>
+        </div>
+
+        <div id="bookData" style="display:none;">
+            <form id="updateBookForm">
+                <label>Title</label>
+                <input type="text" id="updateTitle">
+                
+                <label>Author</label>
+                <input type="text" id="updateAuthor">
+                
+                <label>Publisher</label>
+                <input type="text" id="updatePublisher">
+                
+                <label>Year</label>
+                <input type="number" id="updateYear">
+                
+                <label>Category</label>
+                <select id="updateCategory"></select>
+                
+                <label>Quantity</label>
+                <input type="number" id="updateQuantity">
+                
+                <label>Shelf Location</label>
+                <input type="text" id="updateLocation">
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

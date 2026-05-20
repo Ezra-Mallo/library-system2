@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow Book</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+        <h2>📖 Borrow Book</h2>
+        <form id="borrowForm">
+            <label>Member ID *</label>
+            <input type="text" id="borrowMemberId" placeholder="Enter Member ID" required>
+
+            <label>Book ISBN *</label>
+            <input type="text" id="borrowBookIsbn" placeholder="Enter Book ISBN" required>
+
+            <label>Due Date</label>
+            <input type="date" id="dueDate">
+
+            <button type="submit">Confirm Borrow</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

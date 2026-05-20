@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="css/add-book.css">
+</head>
+<body>
+    <div class="form-container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+        <h2>➕ Add New Book</h2>
+        <form id="addBookForm">
+            <label for="isbn">ISBN *</label>
+            <input type="text" id="isbn" required>
+
+            <label for="title">Title *</label>
+            <input type="text" id="title" required>
+
+            <label for="author">Author *</label>
+            <input type="text" id="author" required>
+
+            <label for="publisher">Publisher</label>
+            <input type="text" id="publisher">
+
+            <label for="year">Year</label>
+            <input type="number" id="year">
+
+            <label for="category">Category</label>
+            <select id="category">
+                <option>Fiction</option>
+                <option>Non-Fiction</option>
+                <option>Science</option>
+                <option>History</option>
+                <option>Technology</option>
+                <option>Children</option>
+            </select>
+
+            <label for="quantity">Quantity *</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+
+            <label for="location">Shelf Location</label>
+            <input type="text" id="location" placeholder="e.g., A-12">
+
+            <button type="submit">Add Book</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
